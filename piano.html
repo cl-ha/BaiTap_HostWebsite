@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Piano</title>
+  <link rel="stylesheet" href="./piano.css">
+  <script src="./piano.js" defer></script>
+</head>
+<body id="april">
+  <div class="menu-style">
+    <div class="btn1">
+      <i class="icon1 fa-solid fa-music"></i>
+      <input type="button" name="" id="nut1" value="Classic" onclick="normal()">
+    </div>
+    <div class="btn2">
+      <i class="icon2 fa-solid fa-music"></i>
+      <input type="button" name="" id="nut2" value="Pretty" onclick="pretty()">
+    </div>
+    <div class="btn3">
+      <i class="icon3 fa-solid fa-music"></i>
+      <input type="button" name="" id="nut3" value="Strong" onclick="strong()">
+    </div>
+    <div class="btn0">
+      <i class="icon0 fa-solid fa-music"></i>
+      <input type="button" name="" id="nut0" value="Again" onclick="aiyl()" ondblclick="Again()">
+    </div>
+  </div>
+  <div class="body">
+    <div class="content" id="cont">
+      <section id="TenDan">
+        <h2 id="Name">HK's Piano</h2>
+        <div class="column volume">
+          <span>Volume</span>
+          <input type="range" min="0" max="1" value="0.5" step="any">
+        </div>
+        <div class="column Show">
+          <span>Show keys</span>
+          <input type="checkbox" checked>
+        </div>
+      </section>
+      
+      <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>Đồ</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>Rê</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>Mi</span></li>
+        <li class="key white" data-key="f"><span>Fa</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>Sol</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>La</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>Si</span></li>
+        <li class="key white" data-key="k"><span>Đố</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>Rế</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key=";"><span>Mí</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

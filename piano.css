@@ -1,0 +1,216 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url('./img/background.png') no-repeat;
+  background-size: cover;
+  
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+.content{
+  border-radius: 20px;
+  padding: 35px 40px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 10px 18px #d1cfcf;
+}
+
+section{
+  color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section h2{
+  font-size: 35px;
+}
+
+section .column{
+  display: flex;
+  align-items: center;
+}
+
+section .column span{
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.volume input{
+  outline: none;
+  accent-color: #fff;
+}
+
+.Show input{
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #4b4b4b;
+  position: relative;
+  appearance: none;
+}
+
+.Show input::before{
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: inherit;
+  top: 50%;
+  left: 5px;
+  background-color: #8c8c8c;
+  transform: translateY(-50%);
+}
+
+.Show input:checked::before{
+  left: 35px;
+  background-color: white;
+
+}
+
+.key{
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  color: #a2a2a2;
+  text-transform: uppercase;
+}
+
+.piano-keys{
+  display: flex;
+  margin-top: 40px;
+}
+
+.piano-keys .white{
+  width: 70px;
+  height: 230px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background: linear-gradient(white 96%, #eee 4%);
+}
+
+.piano-keys .white.active{
+  box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+  background: linear-gradient(to bottom, white 0%, #eee 100%);
+}
+
+.piano-keys .black{
+  width: 44px;
+  height: 140px;
+  margin: 0 -22px 0 -22px;
+  border-radius:0 0 5px 5px;
+  z-index: 2;
+  background: linear-gradient(rgb(6, 6, 6), #000);
+}
+
+.piano-keys .black.active{
+  box-shadow: inset -5px 5px 20px rgba(255,255,255,0.1);
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #434343 100%);
+}
+
+.piano-keys span{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.piano-keys .key.hide span{
+  display: none;
+}
+
+.menu-style{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input[type="button"]{
+  width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-block: 5px;
+  padding-left: 10px;
+  margin: 5px;
+  background-color: white;
+  border: none;
+  border-radius:  5px  0  0 5px;
+}
+#nut1{
+  color: rgb(0, 0, 0);
+  border-right: 6px solid rgb(0, 0, 0);
+}
+
+#nut2{
+  color: rgb(224, 78, 165);
+  border-right: 6px solid rgb(224, 78, 165);
+}
+
+#nut3{
+  color: rgb(255, 0, 0);
+  border-right: 6px solid rgb(255, 0, 0);
+}
+
+#nut0{
+  color: rgb(0, 162, 255);
+  border-right: 6px solid rgb(0, 162, 255);
+}
+
+.btn1{
+  position: relative;
+}
+
+.icon1{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+.btn2{
+  position: relative;
+}
+
+.icon2{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  color: rgb(224, 78, 165);
+}
+.btn3{
+  position: relative;
+}
+
+.icon3{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  color: rgb(255, 0, 0);
+}
+
+.btn0{
+  position: relative;
+}
+
+.icon0{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  color: rgb(0, 162, 255);
+}
