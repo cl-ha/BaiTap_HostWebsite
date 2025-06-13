@@ -6,7 +6,7 @@ var allKeys = [];
 var audio = new Audio("tunes/a.wav");
 
 function playTune(key) {
-  audio.src = "tunes/" + key + ".wav";
+  audio.src = "style/tunes/" + key + ".wav";
   audio.play();
 
   var clickedKey = document.querySelector('[data-key="' + key + '"]');
@@ -41,7 +41,7 @@ pianoKeys.forEach(function(key) {
   });
 });
 
-var nhac = new Audio("./Your Lie in April OST - Again.mp3");
+var nhac = new Audio("./style/Your Lie in April OST - Again.mp3");
 
 function pretty(){
   var backgr = document.getElementById("cont");
@@ -98,9 +98,9 @@ function aiyl(){
   var tendan = document.getElementById("TenDan");
   var tennhac = document.getElementById("Name");
 
-  backgr.style.backgroundImage = "url('./img/Your Lie in April 2.jpg')";
+  backgr.style.backgroundImage = "url('./style/img/Your Lie in April 2.jpg')";
   backgrbody.style.backgroundSize = "cover";
-  backgrbody.style.backgroundImage = "url('./img/Your Lie in April.jpg')";
+  backgrbody.style.backgroundImage = "url('./style/img/Your Lie in April.jpg')";
   tendan.style.color = "white";
   nhac.play();
   tennhac.innerText = "Again OST"
